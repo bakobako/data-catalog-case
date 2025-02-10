@@ -1,0 +1,26 @@
+sm_campaign_id,platform,campaign_name,start_date,end_date,budget,target_audience,status
+1,Facebook,Spring Listings Promotion,2024-03-01 00:00:00,2024-03-31 23:59:59,50000.00,"{""age_range"": ""25-45"", ""interests"": [""real estate"", ""property investment""]}",active
+2,Instagram,Luxury Properties Showcase,2024-03-01 00:00:00,2024-03-31 23:59:59,35000.00,"{""age_range"": ""30-50"", ""interests"": [""luxury lifestyle"", ""high-end real estate""]}",active
+3,LinkedIn,Professional Property Network,2024-03-01 00:00:00,2024-03-31 23:59:59,25000.00,"{""job_titles"": [""Business Owner"", ""Executive""], ""industries"": [""Finance"", ""Technology""]}",active
+4,Facebook,First-Time Buyers Guide,2024-03-01 00:00:00,2024-03-31 23:59:59,30000.00,"{""age_range"": ""22-35"", ""interests"": [""first home"", ""mortgage""]}",active
+5,Instagram,Student Housing Special,2024-03-01 00:00:00,2024-03-31 23:59:59,20000.00,"{""age_range"": ""18-25"", ""interests"": [""student life"", ""university housing""]}",active
+6,Facebook,Investment Properties,2024-03-01 00:00:00,2024-03-31 23:59:59,40000.00,"{""age_range"": ""35-55"", ""interests"": [""investment"", ""property management""]}",active
+7,Instagram,Modern Living Spaces,2024-03-01 00:00:00,2024-03-31 23:59:59,30000.00,"{""age_range"": ""25-40"", ""interests"": [""interior design"", ""modern architecture""]}",active
+8,LinkedIn,Commercial Properties,2024-03-01 00:00:00,2024-03-31 23:59:59,45000.00,"{""job_titles"": [""Business Owner"", ""Real Estate Developer""], ""industries"": [""Real Estate"", ""Construction""]}",active
+9,Facebook,Family Homes Showcase,2024-03-01 00:00:00,2024-03-31 23:59:59,35000.00,"{""age_range"": ""30-45"", ""interests"": [""family life"", ""suburban living""]}",active
+10,Instagram,City Center Living,2024-03-01 00:00:00,2024-03-31 23:59:59,25000.00,"{""age_range"": ""25-35"", ""interests"": [""city life"", ""urban culture""]}",active
+11,Facebook,Premium Properties,2024-03-01 00:00:00,2024-03-31 23:59:59,55000.00,"{""age_range"": ""35-60"", ""interests"": [""luxury lifestyle"", ""high-end properties""]}",active
+12,Instagram,Virtual Tours Promotion,2024-03-01 00:00:00,2024-03-31 23:59:59,15000.00,"{""age_range"": ""25-45"", ""interests"": [""virtual reality"", ""property viewing""]}",active
+13,LinkedIn,Property Investment Seminar,2024-03-01 00:00:00,2024-03-31 23:59:59,30000.00,"{""job_titles"": [""Investor"", ""Financial Advisor""], ""industries"": [""Finance"", ""Real Estate""]}",active
+14,Facebook,Rental Market Updates,2024-03-01 00:00:00,2024-03-31 23:59:59,20000.00,"{""age_range"": ""22-40"", ""interests"": [""property rental"", ""apartment hunting""]}",active
+15,Instagram,Green Living Properties,2024-03-01 00:00:00,2024-03-31 23:59:59,25000.00,"{""age_range"": ""25-45"", ""interests"": [""sustainability"", ""eco-friendly living""]}",active
+16,Facebook,New Developments,2024-03-01 00:00:00,2024-03-31 23:59:59,45000.00,"{""age_range"": ""30-50"", ""interests"": [""new construction"", ""modern homes""]}",active
+17,Instagram,Historic Properties,2024-03-01 00:00:00,2024-03-31 23:59:59,30000.00,"{""age_range"": ""35-60"", ""interests"": [""historic architecture"", ""period properties""]}",active
+18,LinkedIn,Real Estate Investment Trust,2024-03-01 00:00:00,2024-03-31 23:59:59,50000.00,"{""job_titles"": [""Investment Manager"", ""Fund Manager""], ""industries"": [""Finance"", ""Investment""]}",active
+19,Facebook,Suburban Properties,2024-03-01 00:00:00,2024-03-31 23:59:59,35000.00,"{""age_range"": ""30-45"", ""interests"": [""suburban life"", ""family homes""]}",active
+20,Instagram,Smart Homes Showcase,2024-03-01 00:00:00,2024-03-31 23:59:59,40000.00,"{""age_range"": ""25-45"", ""interests"": [""smart technology"", ""home automation""]}",active
+21,Facebook,Property Management,2024-03-01 00:00:00,2024-03-31 23:59:59,25000.00,"{""age_range"": ""30-50"", ""interests"": [""property management"", ""real estate investment""]}",active
+22,Instagram,Luxury Rentals,2024-03-01 00:00:00,2024-03-31 23:59:59,35000.00,"{""age_range"": ""28-45"", ""interests"": [""luxury living"", ""high-end rentals""]}",active
+23,LinkedIn,Commercial Development,2024-03-01 00:00:00,2024-03-31 23:59:59,60000.00,"{""job_titles"": [""Property Developer"", ""Commercial Real Estate""], ""industries"": [""Real Estate"", ""Development""]}",active
+24,Facebook,First Home Campaign,2024-03-01 00:00:00,2024-03-31 23:59:59,30000.00,"{""age_range"": ""25-35"", ""interests"": [""first time buyers"", ""home ownership""]}",active
+25,Instagram,Urban Living,2024-03-01 00:00:00,2024-03-31 23:59:59,25000.00,"{""age_range"": ""25-40"", ""interests"": [""city living"", ""urban lifestyle""]}",active

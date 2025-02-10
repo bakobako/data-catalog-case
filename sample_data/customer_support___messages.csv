@@ -1,0 +1,26 @@
+message_id,conversation_id,sender_type,message_text,timestamp
+1,1,customer,Hi I can't see any images on the property listing,2024-02-01 09:15:00
+2,1,support,Let me check that for you. Which listing are you trying to view?,2024-02-01 09:17:00
+3,2,customer,My payment keeps failing when I try to upgrade my subscription,2024-02-01 10:30:00
+4,2,support,I'll help you with that. Can you tell me what error message you're seeing?,2024-02-01 10:32:00
+5,3,customer,I'm unable to log into my account despite correct credentials,2024-02-01 11:45:00
+6,3,support,I'll help you regain access. Have you tried resetting your password?,2024-02-01 11:47:00
+7,4,customer,I have some questions about listing #123,2024-02-01 13:00:00
+8,4,support,I'll be happy to help. What would you like to know about the property?,2024-02-01 13:02:00
+9,5,customer,I'm getting an error when trying to search properties,2024-02-01 14:15:00
+10,5,support,Can you describe what happens when you try to search?,2024-02-01 14:17:00
+11,6,customer,I can't upgrade my subscription plan,2024-02-01 15:30:00
+12,6,support,I'll assist you with the upgrade. Which plan are you trying to switch to?,2024-02-01 15:32:00
+13,7,customer,How can I contact the property owner?,2024-02-01 16:45:00
+14,7,support,I'll explain the process for contacting property owners,2024-02-01 16:47:00
+15,8,customer,I need to update the details of my property listing,2024-02-02 09:00:00
+16,8,support,I can help you with that. Which details need to be updated?,2024-02-02 09:02:00
+17,9,customer,I'd like to request a refund for my subscription,2024-02-02 10:15:00
+18,9,support,I'll check your eligibility for a refund. When did you subscribe?,2024-02-02 10:17:00
+19,10,customer,I want to delete my account,2024-02-02 11:30:00
+20,10,support,I can help you with account deletion. Are you sure you want to proceed?,2024-02-02 11:32:00
+21,11,customer,I can't find my saved property searches,2024-02-02 12:45:00
+22,11,support,Let me help you locate your saved searches,2024-02-02 12:47:00
+23,12,customer,The search filters aren't working correctly,2024-02-02 14:00:00
+24,12,support,I'll investigate the filter issue. Which filters are you trying to use?,2024-02-02 14:02:00
+25,13,customer,I have a suggestion for improving the website,2024-02-02 15:15:00 

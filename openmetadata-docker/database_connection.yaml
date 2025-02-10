@@ -1,0 +1,27 @@
+source:
+  type: postgres
+  serviceName: sample_db
+  serviceConnection:
+    config:
+      type: Postgres
+      username: user
+      authType:
+        password: pass
+      hostPort: localhost:5433
+      database: postgres
+      ingestAllDatabases: false
+  sourceConfig:
+    config:
+      type: DatabaseMetadata
+      includeTables: true
+sink:
+  type: metadata-rest
+  config: { }
+workflowConfig:
+  loggerLevel: INFO  # DEBUG, INFO, WARNING or ERROR
+  openMetadataServerConfig:
+    hostPort: "http://localhost:8585/api"
+    authProvider: openmetadata
+    securityConfig:
+      jwtToken: "{jwt_token}"
+    storeServiceConnection: true  # false

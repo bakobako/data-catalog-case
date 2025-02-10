@@ -1,0 +1,11 @@
+school_id,school_name,school_type,latitude,longitude,address,website,language_of_instruction,is_private
+1,Gymnázium Jana Nerudy,secondary,50.085123,14.402345,"Hellichova 457/3, Prague 1",www.gjn.cz,Czech,false
+2,Prague British International School,primary,50.079234,14.423456,"K Lesu 558, Prague 4",www.pbis.cz,English,true
+3,Riverside School,primary,50.088345,14.434567,"Rohanské nábřeží 657/7, Prague 8",www.riverside.cz,English,true
+4,Základní škola náměstí Svobody,primary,50.099456,14.445678,"náměstí Svobody 2, Prague 6",www.zs-ns2.cz,Czech,false
+5,Park Lane International School,secondary,50.076567,14.456789,"Valdštejnská 151, Prague 1",www.parklane-is.com,English,true
+6,Gymnázium Na Zatlance,secondary,50.073678,14.467890,"Na Zatlance 11, Prague 5",www.zatlanka.cz,Czech,false
+7,Mateřská škola Voršilská,kindergarten,50.082789,14.478901,"Voršilská 5, Prague 1",www.msvorsilska.cz,Czech,false
+8,Karlova Univerzita,university,50.087890,14.489012,"Ovocný trh 5, Prague 1",www.cuni.cz,Czech,false
+9,VŠCHT Praha,university,50.103901,14.490123,"Technická 5, Prague 6",www.vscht.cz,Czech,false
+10,International School of Prague,primary,50.088012,14.401234,"Nebušická 700, Prague 6",www.isp.cz,English,true 

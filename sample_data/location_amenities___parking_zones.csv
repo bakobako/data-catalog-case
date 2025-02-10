@@ -1,0 +1,11 @@
+zone_id,zone_type,district,price_per_hour,resident_permit_price,geometry,restrictions
+1,blue,Prague 1,0.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.415678, 50.087543], [14.425678, 50.087543]]}","Residents only, 24/7"
+2,purple,Prague 1,40.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.426789, 50.088654], [14.436789, 50.088654]]}","Mixed zone, max 3 hours for visitors"
+3,orange,Prague 1,80.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.437890, 50.089765], [14.447890, 50.089765]]}","Short-term parking, max 2 hours"
+4,blue,Prague 2,0.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.448901, 50.090876], [14.458901, 50.090876]]}","Residents only, 24/7"
+5,purple,Prague 2,30.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.459012, 50.091987], [14.469012, 50.091987]]}","Mixed zone, max 3 hours for visitors"
+6,blue,Prague 3,0.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.470123, 50.093098], [14.480123, 50.093098]]}","Residents only, 24/7"
+7,purple,Prague 3,30.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.481234, 50.094109], [14.491234, 50.094109]]}","Mixed zone, max 3 hours for visitors"
+8,blue,Prague 5,0.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.492345, 50.095210], [14.502345, 50.095210]]}","Residents only, 24/7"
+9,orange,Prague 5,60.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.503456, 50.096321], [14.513456, 50.096321]]}","Short-term parking, max 2 hours"
+10,purple,Prague 7,30.00,1200.00,"{""type"": ""Polygon"", ""coordinates"": [[14.514567, 50.097432], [14.524567, 50.097432]]}","Mixed zone, max 3 hours for visitors" 

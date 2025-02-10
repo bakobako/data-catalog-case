@@ -1,0 +1,173 @@
+schemas:
+  customer_support:
+    description: "Schema for managing customer service operations, including support tickets, conversations, and message history. This system tracks the full lifecycle of customer inquiries from initial contact through resolution."
+    tables:
+      tickets:
+        description: "Central tracking system for customer support issues, linking customers with support staff and maintaining the status of support requests. Each ticket represents a distinct customer inquiry or problem that needs resolution."
+        columns:
+          ticket_id: "Unique identifier for each support ticket"
+          customer_id: "Reference to the customer who created the ticket"
+          subject: "Brief headline describing the support issue"
+          description: "Detailed explanation of the customer's problem or request"
+          status: "Current state of the ticket (open, closed, pending, resolved)"
+          created_at: "Timestamp when the ticket was initially created"
+          updated_at: "Timestamp of the most recent update to the ticket"
+          assigned_to_employee_id: "ID of the support staff member responsible for handling this ticket"
+      conversations:
+        description: "Records of interaction sessions between customers and support staff, tracking the timeline and context of support communications for each ticket"
+        columns:
+          conversation_id: "Unique identifier for each conversation thread"
+          ticket_id: "Reference to the associated support ticket"
+          employee_id: "ID of the support staff member participating in the conversation"
+          started_at: "Timestamp when the conversation began"
+          ended_at: "Timestamp when the conversation was concluded"
+
+      messages:
+        description: "Detailed record of all communications within support conversations, including both customer and support staff messages"
+        columns:
+          message_id: "Unique identifier for each message"
+          conversation_id: "Reference to the parent conversation"
+          sender_type: "Indicates whether the message is from customer or support staff"
+          message_text: "Actual content of the message"
+          timestamp: "Exact time when the message was sent"
+
+      ticket_history:
+        description: "Audit trail of all status changes and updates to support tickets, enabling tracking of ticket progression and support staff actions"
+        columns:
+          history_id: "Unique identifier for each history entry"
+          ticket_id: "Reference to the associated ticket"
+          status_changed_to: "New status value after the change"
+          changed_by_employee_id: "ID of the employee who made the status change"
+          changed_at: "Timestamp when the status change occurred"
+
+  real_estate_listings:
+    description: "Schema for managing real estate property listings, including raw listing data, analyzed property information, location details, and property photos. This system supports comprehensive property tracking and analysis."
+    tables:
+      raw_real_estate_listings:
+        description: "Initial storage for unprocessed property listings as they are collected from various source portals, preserving the original listing data"
+        columns:
+          listing_id: "Unique identifier for each property listing"
+          source_portal: "Name of the website or platform where the listing was found"
+          listing_url: "Original URL of the property listing"
+          short_description: "Brief summary of the property listing"
+          long_description: "Complete detailed description from the original listing"
+          ingested_at: "Timestamp when the listing was collected"
+
+      locations:
+        description: "Geographical and address information for all properties, enabling location-based searching and analysis"
+        columns:
+          location_id: "Unique identifier for each property location"
+          city: "City where the property is located"
+          district: "Specific district or neighborhood within the city"
+          street: "Street name of the property address"
+          house_number: "Building or house number"
+          latitude: "Geographical latitude coordinate"
+          longitude: "Geographical longitude coordinate"
+
+      analysed_real_estate_listings:
+        description: "Structured and normalized property data extracted from raw listings, including detailed property characteristics and features"
+        columns:
+          listing_id: "Reference to the original raw listing"
+          property_type: "Category of property (apartment, house, etc.)"
+          listing_price: "Advertised price of the property"
+          currency: "Currency of the listing price"
+          location_id: "Reference to the property's location details"
+          num_bedrooms: "Number of bedrooms in the property"
+          num_bathrooms: "Number of bathrooms in the property"
+          area_m2: "Total living area in square meters"
+          apartment_layout: "Description of the floor plan arrangement"
+          floor_number: "Floor level of the property in the building"
+          building_floors: "Total number of floors in the building"
+          energy_efficiency_label: "Energy performance certificate rating"
+          monthly_payments_czk: "Additional monthly costs in Czech Koruna"
+
+      listing_photos:
+        description: "Storage and management of property photographs, including classification and tracking of image assets"
+        columns:
+          photo_id: "Unique identifier for each photo"
+          listing_id: "Reference to the associated property listing"
+          photo_url: "URL where the photo is stored"
+          photo_type: "Classification of the photo (exterior, interior, floor plan, etc.)"
+          upload_timestamp: "When the photo was added to the system"
+
+  sales:
+    description: "Schema for managing customer relationships, sales transactions, and subscription services. Tracks customer lifecycle from acquisition through ongoing service delivery."
+    tables:
+      customers:
+        description: "Central repository of customer information, including contact details and account status"
+        columns:
+          customer_id: "Unique identifier for each customer"
+          first_name: "Customer's first name"
+          last_name: "Customer's last name"
+          email: "Primary email contact address"
+          phone_number: "Contact phone number"
+          signup_date: "When the customer first registered"
+          status: "Current account status (active, canceled, trial)"
+          preferred_contact_method: "Customer's preferred way to be contacted"
+
+      transactions:
+        description: "Record of all financial transactions with customers, including purchases, subscriptions, and refunds"
+        columns:
+          transaction_id: "Unique identifier for each transaction"
+          customer_id: "Reference to the customer who made the transaction"
+          transaction_type: "Category of transaction (purchase, subscription, refund)"
+          amount: "Monetary value of the transaction"
+          currency: "Currency used in the transaction"
+          transaction_date: "When the transaction occurred"
+          payment_method: "Method used for payment"
+
+      subscriptions:
+        description: "Management of customer subscription services, including plan details and subscription lifecycle"
+        columns:
+          subscription_id: "Unique identifier for each subscription"
+          customer_id: "Reference to the subscribing customer"
+          subscription_plan: "Type of subscription plan"
+          start_date: "When the subscription began"
+          end_date: "When the subscription terminates"
+          status: "Current state of the subscription"
+
+  human_resources:
+    description: "Schema for managing employee data, organizational structure, and departmental information. Supports internal workforce management and organizational planning."
+    tables:
+      departments:
+        description: "Organizational structure tracking, including department leadership and resource allocation"
+        columns:
+          department_id: "Unique identifier for each department"
+          department_name: "Official name of the department"
+          manager_id: "Reference to the employee managing the department"
+          budget: "Allocated budget for the department"
+          employee_count: "Number of employees in the department"
+
+      employees:
+        description: "Comprehensive employee information tracking, including roles, compensation, and employment status"
+        columns:
+          employee_id: "Unique identifier for each employee"
+          first_name: "Employee's first name"
+          last_name: "Employee's last name"
+          position: "Job title or role"
+          department_id: "Reference to the employee's department"
+          salary: "Current salary amount"
+          hire_date: "When the employee started"
+          status: "Current employment status"
+
+  cloud_infrastructure:
+    description: "Schema for monitoring cloud operations, including pipeline execution and cost tracking. Enables oversight of cloud resource utilization and operational efficiency."
+    tables:
+      pipeline_runs:
+        description: "Execution tracking for data processing pipelines, monitoring operational status and performance"
+        columns:
+          run_id: "Unique identifier for each pipeline execution"
+          pipeline_name: "Name of the executed pipeline"
+          start_timestamp: "When the pipeline started running"
+          end_timestamp: "When the pipeline completed"
+          status: "Final execution status of the pipeline run"
+
+      cloud_costs:
+        description: "Detailed tracking of cloud resource usage and associated costs across different service categories"
+        columns:
+          cost_id: "Unique identifier for each cost entry"
+          cost_category: "Type of cloud service incurring the cost"
+          amount: "Monetary amount of the cost"
+          currency: "Currency of the cost amount"
+          timestamp: "When the cost was incurred"
+          cost_description: "Detailed explanation of the cost source"

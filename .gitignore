@@ -1,0 +1,4 @@
+/.venv/
+/openmetadata-docker/docker-volume/
+/openmetadata-docker/logs/
+.idea/

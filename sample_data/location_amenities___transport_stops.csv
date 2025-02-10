@@ -1,0 +1,11 @@
+stop_id,stop_name,transport_type,latitude,longitude,zone,wheelchair_accessible,lines
+1,Můstek,metro,50.083466,14.423648,P,true,"A,B"
+2,Muzeum,metro,50.079608,14.431417,P,true,"A,C"
+3,Florenc,metro,50.089531,14.439075,P,true,"B,C"
+4,Malostranská,metro,50.088439,14.404947,P,true,A
+5,I. P. Pavlova,tram,50.075531,14.427853,P,true,"4,10,16,22"
+6,Karlovo náměstí,tram,50.076361,14.418694,P,true,"2,3,6,18,22"
+7,Anděl,tram,50.071389,14.404167,P,true,"4,7,9,10,16"
+8,Dejvická,bus,50.100278,14.393333,P,true,"107,116,147,160"
+9,Hlavní nádraží,train,50.083333,14.435278,P,true,"S1,S2,S3,R"
+10,Smíchovské nádraží,train,50.059722,14.408611,P,true,"S6,S7,R" 

@@ -1,0 +1,26 @@
+location_id,city,district,street,house_number,latitude,longitude
+LOC001,Prague,Prague 6,Bělohorská,125,50.087123,14.372345
+LOC002,Prague,Prague 1,Vodičkova,45,50.081234,14.423456
+LOC003,Prague,Prague 1,Pařížská,78,50.089876,14.418765
+LOC004,Prague,Prague 2,Vinohradská,156,50.075432,14.445678
+LOC005,Prague,Prague 3,Žižkovská,89,50.083456,14.458765
+LOC006,Prague,Prague 5,Radlická,234,50.065432,14.389876
+LOC007,Prague,Prague 4,Budějovická,67,50.045678,14.445678
+LOC008,Prague,Prague 1,Dlouhá,198,50.087654,14.421234
+LOC009,Prague,Prague 10,Vršovická,345,50.067890,14.478901
+LOC010,Prague,Prague 7,Komunardů,56,50.098765,14.432109
+LOC011,Prague,Prague 8,Sokolovská,432,50.103456,14.467890
+LOC012,Prague,Prague 2,Italská,78,50.076543,14.434567
+LOC013,Prague,Prague 6,Dejvická,234,50.089012,14.378901
+LOC014,Prague,Prague 3,Koněvova,167,50.084567,14.456789
+LOC015,Prague,Prague 5,Smíchovská,89,50.068901,14.398765
+LOC016,Prague,Prague 1,Kaprova,23,50.087654,14.423456
+LOC017,Prague,Prague 4,Pankrácká,456,50.056789,14.445678
+LOC018,Prague,Prague 2,Londýnská,89,50.078901,14.434567
+LOC019,Prague,Prague 1,Revoluční,123,50.089012,14.421234
+LOC020,Prague,Prague 7,Holešovická,345,50.099012,14.434567
+LOC021,Prague,Prague 8,Karlínská,78,50.098765,14.456789
+LOC022,Prague,Prague 5,Košířská,234,50.067890,14.387654
+LOC023,Prague,Prague 3,Flora,56,50.078901,14.456789
+LOC024,Prague,Prague 6,Evropská,789,50.089012,14.367890
+LOC025,Prague,Prague 2,Mánesova,145,50.076543,14.434567 

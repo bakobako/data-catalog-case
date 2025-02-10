@@ -1,0 +1,26 @@
+page_view_id,visit_id,page_url,page_title,view_duration,timestamp
+1,1,/byty-praha,Byty Praha - Přehled nabídek,125.5,2024-02-01 09:05:00
+2,1,/byty-praha/detail/1,Krásný byt 2+1 Praha 6,180.3,2024-02-01 09:08:00
+3,2,/pronajem-bytu-praha,Pronájem bytů Praha,95.2,2024-02-01 10:20:00
+4,3,/prodej-bytu-praha,Prodej bytů Praha,145.8,2024-02-01 11:35:00
+5,4,/novostavby-praha,Novostavby Praha,160.4,2024-02-01 12:50:00
+6,5,/byty-k-pronajmu,Byty k pronájmu,110.7,2024-02-01 14:05:00
+7,6,/reality-praha,Reality Praha,135.2,2024-02-01 15:20:00
+8,7,/prodej-domu-praha,Prodej domů Praha,170.9,2024-02-01 16:35:00
+9,8,/byty-na-prodej,Byty na prodej,140.3,2024-02-01 17:50:00
+10,9,/pronajem-garsonky,Pronájem garsonek,85.6,2024-02-02 09:05:00
+11,10,/luxusni-byty-praha,Luxusní byty Praha,195.4,2024-02-02 10:20:00
+12,11,/studentske-byty,Studentské byty,120.8,2024-02-02 11:35:00
+13,12,/byty-praha-1,Byty Praha 1,165.2,2024-02-02 12:50:00
+14,13,/byty-praha-2,Byty Praha 2,150.7,2024-02-02 14:05:00
+15,14,/byty-praha-3,Byty Praha 3,130.4,2024-02-02 15:20:00
+16,15,/byty-praha-4,Byty Praha 4,145.9,2024-02-02 16:35:00
+17,16,/byty-praha-5,Byty Praha 5,155.3,2024-02-02 17:50:00
+18,17,/byty-praha-6,Byty Praha 6,175.8,2024-02-03 09:05:00
+19,18,/byty-praha-7,Byty Praha 7,140.2,2024-02-03 10:20:00
+20,19,/byty-praha-8,Byty Praha 8,125.6,2024-02-03 11:35:00
+21,20,/byty-praha-9,Byty Praha 9,115.4,2024-02-03 12:50:00
+22,21,/byty-praha-10,Byty Praha 10,135.7,2024-02-03 14:05:00
+23,22,/pronajem-dlouhodobe,Dlouhodobý pronájem,160.8,2024-02-03 15:20:00
+24,23,/pronajem-bez-realitky,Pronájem bez realitky,145.2,2024-02-03 16:35:00
+25,24,/prodej-bez-realitky,Prodej bez realitky,155.6,2024-02-03 17:50:00 

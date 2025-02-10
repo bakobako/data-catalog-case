@@ -1,0 +1,11 @@
+poi_id,name,category,subcategory,latitude,longitude,address,opening_hours,website,phone
+1,Tesco Express,grocery,supermarket,50.087123,14.423456,"Václavské náměstí 804/58, Prague 1","{""mon-sun"": ""06:00-23:00""}",www.tesco.cz,+420234678901
+2,Albert,grocery,supermarket,50.075531,14.427853,"Jugoslávská 8, Prague 2","{""mon-sat"": ""07:00-22:00"", ""sun"": ""08:00-21:00""}",www.albert.cz,+420234678902
+3,Billa,grocery,supermarket,50.089531,14.439075,"Na Florenci 1420/3, Prague 1","{""mon-sun"": ""07:00-22:00""}",www.billa.cz,+420234678903
+4,OC Palladium,shopping_mall,,50.088992,14.428694,"Náměstí Republiky 1, Prague 1","{""mon-sun"": ""09:00-21:00""}",www.palladiumpraha.cz,+420234678904
+5,Restaurace Lokál,restaurant,czech,50.079608,14.431417,"Dlouhá 33, Prague 1","{""mon-sun"": ""11:00-23:00""}",www.lokal.cz,+420234678905
+6,Costa Coffee,restaurant,cafe,50.083466,14.423648,"Můstek 9, Prague 1","{""mon-sun"": ""07:30-20:00""}",www.costa.cz,+420234678906
+7,Manifesto Market,restaurant,food_market,50.088439,14.404947,"Florenc, Prague 1","{""mon-sun"": ""11:00-22:00""}",www.manifesto.city,+420234678907
+8,OC Nový Smíchov,shopping_mall,,50.071389,14.404167,"Plzeňská 8, Prague 5","{""mon-sun"": ""09:00-21:00""}",www.novysmichov.cz,+420234678908
+9,Žižkovská věž,tourist_attraction,,50.081123,14.451234,"Mahlerovy sady 1, Prague 3","{""mon-sun"": ""08:00-24:00""}",www.towerpark.cz,+420234678909
+10,Národní muzeum,tourist_attraction,,50.079608,14.431417,"Václavské nám. 68, Prague 1","{""tue-sun"": ""10:00-18:00""}",www.nm.cz,+420234678910 

@@ -1,0 +1,11 @@
+stat_id,bank_name,interest_rate,min_down_payment_percentage,max_ltv,timestamp,fixation_period_years
+1,Česká spořitelna,5.89,10.0,90.0,2024-01-01 00:00:00,3
+2,Česká spořitelna,5.99,10.0,90.0,2024-01-01 00:00:00,5
+3,ČSOB,5.85,15.0,85.0,2024-01-01 00:00:00,3
+4,ČSOB,5.95,15.0,85.0,2024-01-01 00:00:00,5
+5,Komerční banka,5.79,10.0,90.0,2024-01-01 00:00:00,3
+6,Komerční banka,5.89,10.0,90.0,2024-01-01 00:00:00,5
+7,Moneta Money Bank,5.94,20.0,80.0,2024-01-01 00:00:00,3
+8,Moneta Money Bank,6.04,20.0,80.0,2024-01-01 00:00:00,5
+9,Raiffeisenbank,5.84,15.0,85.0,2024-01-01 00:00:00,3
+10,Raiffeisenbank,5.94,15.0,85.0,2024-01-01 00:00:00,5 

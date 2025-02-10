@@ -1,0 +1,11 @@
+project_id,region_id,project_name,developer_name,total_units,available_units,completion_date,price_range_min,price_range_max,project_status,has_parking,website_url
+1,1,Residence Park Kavčí Hory,Central Group,156,45,2025-06-30 00:00:00,8900000.00,25000000.00,under construction,true,www.central-group.cz/kavci-hory
+2,2,Marina Island,Lighthouse Group,220,12,2024-12-31 00:00:00,7500000.00,18000000.00,under construction,true,www.marina-island.cz
+3,4,Modřanský Háj,Avestus Real Estate,180,89,2025-03-31 00:00:00,6800000.00,15000000.00,planning,true,www.modranskyhaj.cz
+4,5,Smíchov City,Sekyra Group,450,235,2026-12-31 00:00:00,7200000.00,22000000.00,under construction,true,www.smichov-city.cz
+5,8,Rezidence Ponavia,Trikaya,95,28,2024-09-30 00:00:00,5500000.00,12000000.00,under construction,true,www.rezidence-ponavia.cz
+6,1,Vltava Residence,Penta Real Estate,285,158,2025-12-31 00:00:00,9500000.00,28000000.00,planning,true,www.vltava-residence.cz
+7,3,Žižkov City,CTR Group,320,320,2026-06-30 00:00:00,6900000.00,16000000.00,planning,true,www.zizkov-city.cz
+8,5,Port Smíchov,Skanska Reality,175,89,2025-09-30 00:00:00,8200000.00,19000000.00,under construction,true,www.port-smichov.cz
+9,8,Nová Zbrojovka,CPI Property Group,550,445,2027-12-31 00:00:00,5800000.00,14000000.00,under construction,true,www.nova-zbrojovka.cz
+10,10,Rezidence Nová Karolina,Passerinvest,280,196,2026-03-31 00:00:00,4900000.00,11000000.00,planning,true,www.nova-karolina.cz 

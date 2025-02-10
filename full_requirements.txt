@@ -1,0 +1,7 @@
+pandas==2.1.4
+psycopg2-binary==2.9.10
+pydantic==2.10.6
+pydantic_core==2.27.2
+SQLAlchemy==1.4.54
+cryptography==44.0.0
+openmetadata-ingestion==1.6.3.0

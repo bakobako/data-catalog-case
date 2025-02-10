@@ -1,0 +1,26 @@
+photo_id,listing_id,photo_url,photo_type,upload_timestamp
+1,1,https://photos.example.com/1/main.jpg,main,2024-03-15 10:35:00
+2,1,https://photos.example.com/1/kitchen.jpg,interior,2024-03-15 10:35:05
+3,1,https://photos.example.com/1/bathroom.jpg,interior,2024-03-15 10:35:10
+4,2,https://photos.example.com/2/main.jpg,main,2024-03-15 11:50:00
+5,2,https://photos.example.com/2/living.jpg,interior,2024-03-15 11:50:05
+6,3,https://photos.example.com/3/main.jpg,main,2024-03-15 13:25:00
+7,3,https://photos.example.com/3/terrace.jpg,exterior,2024-03-15 13:25:05
+8,4,https://photos.example.com/4/main.jpg,main,2024-03-15 14:20:00
+9,4,https://photos.example.com/4/kitchen.jpg,interior,2024-03-15 14:20:05
+10,5,https://photos.example.com/5/main.jpg,main,2024-03-15 15:35:00
+11,5,https://photos.example.com/5/living.jpg,interior,2024-03-15 15:35:05
+12,6,https://photos.example.com/6/main.jpg,main,2024-03-15 16:50:00
+13,7,https://photos.example.com/7/main.jpg,main,2024-03-16 09:05:00
+14,8,https://photos.example.com/8/main.jpg,main,2024-03-16 10:20:00
+15,9,https://photos.example.com/9/main.jpg,main,2024-03-16 11:35:00
+16,10,https://photos.example.com/10/main.jpg,main,2024-03-16 12:50:00
+17,11,https://photos.example.com/11/main.jpg,main,2024-03-16 14:05:00
+18,12,https://photos.example.com/12/main.jpg,main,2024-03-16 15:20:00
+19,13,https://photos.example.com/13/main.jpg,main,2024-03-16 16:35:00
+20,14,https://photos.example.com/14/main.jpg,main,2024-03-16 17:50:00
+21,15,https://photos.example.com/15/main.jpg,main,2024-03-17 09:05:00
+22,16,https://photos.example.com/16/main.jpg,main,2024-03-17 10:20:00
+23,17,https://photos.example.com/17/main.jpg,main,2024-03-17 11:35:00
+24,18,https://photos.example.com/18/main.jpg,main,2024-03-17 12:50:00
+25,19,https://photos.example.com/19/main.jpg,main,2024-03-17 14:05:00 

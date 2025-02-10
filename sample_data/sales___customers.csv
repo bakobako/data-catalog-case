@@ -1,0 +1,26 @@
+customer_id,first_name,last_name,email,phone_number,signup_date,status,preferred_contact_method
+1,John,Smith,john.smith@email.com,+420 777 123 456,2023-01-15 09:30:00,active,email
+2,Marie,Novotná,marie.novotna@email.cz,+420 608 234 567,2023-02-01 14:20:00,active,phone
+3,Pavel,Dvořák,pavel.dvorak@email.cz,+420 776 345 678,2023-02-15 11:45:00,trial,email
+4,Anna,Svobodová,anna.svobodova@email.com,+420 602 456 789,2023-03-01 16:30:00,active,phone
+5,Tomáš,Procházka,tomas.prochazka@email.cz,+420 775 567 890,2023-03-15 10:15:00,canceled,email
+6,Eva,Kučerová,eva.kucerova@email.cz,+420 607 678 901,2023-04-01 13:45:00,active,email
+7,Martin,Novák,martin.novak@email.com,+420 774 789 012,2023-04-15 15:20:00,active,phone
+8,Lucie,Horáková,lucie.horakova@email.cz,+420 606 890 123,2023-05-01 09:10:00,trial,email
+9,Jan,Černý,jan.cerny@email.com,+420 773 901 234,2023-05-15 14:30:00,active,phone
+10,Petra,Veselá,petra.vesela@email.cz,+420 605 012 345,2023-06-01 11:25:00,canceled,email
+11,Jiří,Krejčí,jiri.krejci@email.com,+420 772 123 456,2023-06-15 16:40:00,active,email
+12,Hana,Marková,hana.markova@email.cz,+420 604 234 567,2023-07-01 10:55:00,active,phone
+13,Michal,Pospíšil,michal.pospisil@email.cz,+420 771 345 678,2023-07-15 13:15:00,trial,email
+14,Tereza,Benešová,tereza.benesova@email.com,+420 603 456 789,2023-08-01 15:50:00,active,email
+15,David,Marek,david.marek@email.cz,+420 770 567 890,2023-08-15 09:25:00,active,phone
+16,Veronika,Králová,veronika.kralova@email.cz,+420 602 678 901,2023-09-01 14:40:00,canceled,email
+17,Filip,Urban,filip.urban@email.com,+420 769 789 012,2023-09-15 11:05:00,active,phone
+18,Kristýna,Jelínková,kristyna.jelinkova@email.cz,+420 601 890 123,2023-10-01 16:20:00,active,email
+19,Ondřej,Malý,ondrej.maly@email.com,+420 768 901 234,2023-10-15 10:35:00,trial,email
+20,Barbora,Pokorná,barbora.pokorna@email.cz,+420 600 012 345,2023-11-01 13:50:00,active,phone
+21,Jakub,Růžička,jakub.ruzicka@email.com,+420 767 123 456,2023-11-15 15:15:00,active,email
+22,Karolína,Sedláčková,karolina.sedlackova@email.cz,+420 599 234 567,2023-12-01 09:40:00,canceled,phone
+23,Lukáš,Kříž,lukas.kriz@email.com,+420 766 345 678,2023-12-15 14:05:00,active,email
+24,Adéla,Čermáková,adela.cermakova@email.cz,+420 598 456 789,2024-01-01 11:30:00,trial,email
+25,Vojtěch,Vaněk,vojtech.vanek@email.com,+420 765 567 890,2024-01-15 16:45:00,active,phone 

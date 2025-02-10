@@ -1,0 +1,26 @@
+sm_ad_id,sm_campaign_id,ad_name,ad_type,ad_content,clicks,impressions,ctr,cost_per_click,status
+1,1,Spring Listing Main,image,https://ads.example.com/1/main.jpg,1250,45000,0.028,12.50,active
+2,1,Spring Listing Video,video,https://ads.example.com/1/video.mp4,980,32000,0.031,15.20,active
+3,2,Luxury Home Tour,video,https://ads.example.com/2/tour.mp4,850,25000,0.034,18.90,active
+4,2,Luxury Interior,image,https://ads.example.com/2/interior.jpg,720,28000,0.026,16.75,active
+5,3,Business Network,carousel,https://ads.example.com/3/carousel.jpg,650,20000,0.033,22.40,active
+6,4,First Home Guide,image,https://ads.example.com/4/guide.jpg,1100,38000,0.029,13.80,active
+7,5,Student Rooms,carousel,https://ads.example.com/5/rooms.jpg,950,30000,0.032,11.25,active
+8,6,Investment Return,video,https://ads.example.com/6/roi.mp4,780,26000,0.030,19.50,active
+9,7,Modern Design,image,https://ads.example.com/7/design.jpg,890,29000,0.031,14.75,active
+10,8,Commercial Space,carousel,https://ads.example.com/8/commercial.jpg,560,18000,0.031,25.60,active
+11,9,Family Home,video,https://ads.example.com/9/family.mp4,1020,35000,0.029,15.80,active
+12,10,City Living,image,https://ads.example.com/10/city.jpg,880,28000,0.031,16.90,active
+13,11,Premium Interior,carousel,https://ads.example.com/11/premium.jpg,670,22000,0.030,24.30,active
+14,12,Virtual Tour Demo,video,https://ads.example.com/12/virtual.mp4,920,31000,0.030,14.20,active
+15,13,Investment Tips,image,https://ads.example.com/13/tips.jpg,750,25000,0.030,18.50,active
+16,14,Rental Guide,carousel,https://ads.example.com/14/rental.jpg,850,29000,0.029,13.75,active
+17,15,Eco Home,video,https://ads.example.com/15/eco.mp4,790,26000,0.030,16.80,active
+18,16,New Build Tour,image,https://ads.example.com/16/newbuild.jpg,980,33000,0.030,15.90,active
+19,17,Historic Features,carousel,https://ads.example.com/17/historic.jpg,680,23000,0.030,19.40,active
+20,18,Investment Trust,video,https://ads.example.com/18/trust.mp4,590,19000,0.031,26.80,active
+21,19,Suburban Life,image,https://ads.example.com/19/suburban.jpg,870,29000,0.030,14.90,active
+22,20,Smart Features,carousel,https://ads.example.com/20/smart.jpg,760,25000,0.030,17.60,active
+23,21,Management Tips,video,https://ads.example.com/21/management.mp4,650,21000,0.031,20.40,active
+24,22,Luxury Rental,image,https://ads.example.com/22/luxury.jpg,720,24000,0.030,21.50,active
+25,23,Development Project,carousel,https://ads.example.com/23/development.jpg,580,19000,0.031,28.90,active 

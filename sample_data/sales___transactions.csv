@@ -1,0 +1,26 @@
+transaction_id,customer_id,transaction_type,amount,currency,transaction_date,payment_method
+1,1,purchase,15000.00,CZK,2024-01-15 10:30:00,credit card
+2,2,subscription,2999.00,CZK,2024-01-15 11:45:00,bank transfer
+3,4,purchase,25000.00,CZK,2024-01-16 09:15:00,PayPal
+4,6,subscription,1999.00,CZK,2024-01-16 14:30:00,credit card
+5,3,purchase,8500.00,CZK,2024-01-17 12:20:00,bank transfer
+6,8,subscription,999.00,CZK,2024-01-18 15:45:00,credit card
+7,10,refund,-5000.00,CZK,2024-01-19 10:10:00,credit card
+8,12,purchase,12000.00,CZK,2024-01-20 13:25:00,PayPal
+9,14,subscription,2999.00,CZK,2024-01-21 16:40:00,bank transfer
+10,15,purchase,18500.00,CZK,2024-01-22 09:55:00,credit card
+11,17,subscription,1999.00,CZK,2024-01-23 14:15:00,PayPal
+12,19,purchase,9500.00,CZK,2024-01-24 11:30:00,bank transfer
+13,21,subscription,999.00,CZK,2024-01-25 15:45:00,credit card
+14,23,purchase,22000.00,CZK,2024-01-26 10:00:00,PayPal
+15,25,subscription,2999.00,CZK,2024-01-27 13:20:00,bank transfer
+16,1,purchase,11000.00,CZK,2024-01-28 16:35:00,credit card
+17,3,subscription,1999.00,CZK,2024-01-29 09:50:00,PayPal
+18,5,refund,-3500.00,CZK,2024-01-30 14:05:00,credit card
+19,7,purchase,16500.00,CZK,2024-01-31 11:25:00,bank transfer
+20,9,subscription,999.00,CZK,2024-02-01 15:40:00,credit card
+21,11,purchase,19500.00,CZK,2024-02-02 10:55:00,PayPal
+22,13,subscription,2999.00,CZK,2024-02-03 14:10:00,bank transfer
+23,15,purchase,13500.00,CZK,2024-02-04 11:30:00,credit card
+24,17,subscription,1999.00,CZK,2024-02-05 15:45:00,PayPal
+25,19,purchase,21000.00,CZK,2024-02-06 10:00:00,bank transfer 

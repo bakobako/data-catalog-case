@@ -1,0 +1,26 @@
+cost_id,cost_category,amount,currency,timestamp,cost_description
+1,storage,1250.50,CZK,2024-02-01 00:00:00,S3 storage for property images
+2,compute,3500.75,CZK,2024-02-01 00:00:00,EC2 instances for web servers
+3,network,750.25,CZK,2024-02-01 00:00:00,Data transfer costs
+4,api_calls,450.00,CZK,2024-02-01 00:00:00,API Gateway usage
+5,database,2800.50,CZK,2024-02-01 00:00:00,RDS PostgreSQL instances
+6,storage,1275.50,CZK,2024-02-02 00:00:00,S3 storage for property images
+7,compute,3600.25,CZK,2024-02-02 00:00:00,EC2 instances for web servers
+8,network,725.75,CZK,2024-02-02 00:00:00,Data transfer costs
+9,api_calls,475.00,CZK,2024-02-02 00:00:00,API Gateway usage
+10,database,2850.50,CZK,2024-02-02 00:00:00,RDS PostgreSQL instances
+11,storage,1300.00,CZK,2024-02-03 00:00:00,S3 storage for property images
+12,compute,3550.50,CZK,2024-02-03 00:00:00,EC2 instances for web servers
+13,network,775.25,CZK,2024-02-03 00:00:00,Data transfer costs
+14,api_calls,425.00,CZK,2024-02-03 00:00:00,API Gateway usage
+15,database,2900.75,CZK,2024-02-03 00:00:00,RDS PostgreSQL instances
+16,storage,1225.75,CZK,2024-02-04 00:00:00,S3 storage for property images
+17,compute,3650.25,CZK,2024-02-04 00:00:00,EC2 instances for web servers
+18,network,800.50,CZK,2024-02-04 00:00:00,Data transfer costs
+19,api_calls,500.00,CZK,2024-02-04 00:00:00,API Gateway usage
+20,database,2950.25,CZK,2024-02-04 00:00:00,RDS PostgreSQL instances
+21,storage,1350.50,CZK,2024-02-05 00:00:00,S3 storage for property images
+22,compute,3700.75,CZK,2024-02-05 00:00:00,EC2 instances for web servers
+23,network,825.25,CZK,2024-02-05 00:00:00,Data transfer costs
+24,api_calls,525.00,CZK,2024-02-05 00:00:00,API Gateway usage
+25,database,3000.50,CZK,2024-02-05 00:00:00,RDS PostgreSQL instances 

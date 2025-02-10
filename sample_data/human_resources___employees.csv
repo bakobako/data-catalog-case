@@ -1,0 +1,26 @@
+employee_id,first_name,last_name,position,department_id,salary,hire_date,status
+1,Jan,Novák,Sales Director,1,120000.00,2022-01-15 00:00:00,active
+2,Marie,Svobodová,Sales Manager,1,85000.00,2022-02-01 00:00:00,active
+3,Petr,Dvořák,Sales Representative,1,65000.00,2022-02-15 00:00:00,active
+4,Eva,Černá,Sales Representative,1,65000.00,2022-03-01 00:00:00,active
+5,Tomáš,Procházka,Marketing Director,2,110000.00,2022-03-15 00:00:00,active
+6,Jana,Kučerová,Marketing Manager,2,80000.00,2022-04-01 00:00:00,active
+7,Martin,Veselý,Marketing Specialist,2,70000.00,2022-04-15 00:00:00,active
+8,Lucie,Horáková,Marketing Analyst,2,68000.00,2022-05-01 00:00:00,active
+9,Pavel,Král,Marketing Coordinator,2,65000.00,2022-05-15 00:00:00,active
+10,Hana,Němcová,Support Director,3,100000.00,2022-06-01 00:00:00,active
+11,Jiří,Marek,Support Manager,3,75000.00,2022-06-15 00:00:00,active
+12,Lenka,Pokorná,Support Specialist,3,60000.00,2022-07-01 00:00:00,active
+13,Michal,Urban,Support Agent,3,55000.00,2022-07-15 00:00:00,active
+14,Tereza,Krejčí,Support Agent,3,55000.00,2022-08-01 00:00:00,active
+15,David,Jelínek,IT Director,4,130000.00,2022-08-15 00:00:00,active
+16,Veronika,Marková,IT Manager,4,95000.00,2022-09-01 00:00:00,active
+17,Filip,Čermák,Senior Developer,4,90000.00,2022-09-15 00:00:00,active
+18,Kristýna,Benešová,Developer,4,85000.00,2022-10-01 00:00:00,active
+19,Ondřej,Pospíšil,Developer,4,85000.00,2022-10-15 00:00:00,active
+20,Barbora,Šimková,HR Director,5,105000.00,2022-11-01 00:00:00,active
+21,Jakub,Růžička,HR Manager,5,80000.00,2022-11-15 00:00:00,active
+22,Karolína,Sedláčková,HR Specialist,5,65000.00,2022-12-01 00:00:00,active
+23,Lukáš,Kříž,Finance Manager,6,90000.00,2022-12-15 00:00:00,active
+24,Adéla,Malá,Accountant,6,70000.00,2023-01-01 00:00:00,active
+25,Vojtěch,Vaněk,Finance Director,6,115000.00,2023-01-15 00:00:00,active 

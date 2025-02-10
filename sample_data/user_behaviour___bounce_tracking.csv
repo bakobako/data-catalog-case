@@ -1,0 +1,26 @@
+bounce_id,customer_id,email_id,bounce_reason,bounce_timestamp,bounce_type
+1,3,EMAIL003,Invalid email address,2024-02-01 12:45:00,hard
+2,7,EMAIL007,Mailbox full,2024-02-01 17:45:00,soft
+3,12,EMAIL012,Server error,2024-02-02 14:00:00,soft
+4,17,EMAIL017,Domain not found,2024-02-03 10:15:00,hard
+5,22,EMAIL022,Spam rejection,2024-02-03 16:30:00,soft
+6,4,EMAIL026,Invalid domain,2024-02-04 11:45:00,hard
+7,8,EMAIL031,Mailbox unavailable,2024-02-04 15:30:00,soft
+8,13,EMAIL036,Connection timeout,2024-02-05 09:15:00,soft
+9,18,EMAIL041,Recipient blocked,2024-02-05 14:45:00,hard
+10,23,EMAIL046,Authentication failed,2024-02-06 10:30:00,soft
+11,2,EMAIL051,DNS failure,2024-02-06 15:15:00,soft
+12,6,EMAIL056,Mailbox disabled,2024-02-07 11:00:00,hard
+13,11,EMAIL061,Quota exceeded,2024-02-07 16:45:00,soft
+14,15,EMAIL066,Policy rejection,2024-02-08 09:30:00,soft
+15,20,EMAIL071,Invalid recipient,2024-02-08 14:15:00,hard
+16,24,EMAIL076,Network error,2024-02-09 10:00:00,soft
+17,1,EMAIL081,Security violation,2024-02-09 15:45:00,hard
+18,5,EMAIL086,Greylist rejection,2024-02-10 11:30:00,soft
+19,9,EMAIL091,Content rejected,2024-02-10 16:15:00,soft
+20,14,EMAIL096,Rate limit exceeded,2024-02-11 09:00:00,soft
+21,19,EMAIL101,Mailbox not found,2024-02-11 14:45:00,hard
+22,25,EMAIL106,TLS failure,2024-02-12 10:30:00,soft
+23,10,EMAIL111,Connection refused,2024-02-12 15:15:00,soft
+24,16,EMAIL116,Spam filter,2024-02-13 11:00:00,soft
+25,21,EMAIL121,Invalid MX record,2024-02-13 16:45:00,hard 
