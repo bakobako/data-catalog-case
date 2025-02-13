@@ -17,7 +17,7 @@ cd ..
 echo -e "\n=== Setting up Database Schema and Tables in Postgres ==="
 python database_setup/database_setup.py "postgresql://user:pass@localhost:5433/postgres"
 
-echo -e "\n=== Loading Sample Data to Postgres==="
+echo -e "\n=== Loading Sample Data to Postgres ==="
 python database_setup/load_sample_data.py "postgresql://user:pass@localhost:5433/postgres"
 
 echo -e "\n=== Setup Complete! ==="
