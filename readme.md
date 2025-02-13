@@ -5,6 +5,11 @@ This project implements a data catalog system for a real estate data warehouse u
 
 The sample data represents a fictitious real estate company that provides property listings and valuation services for buyers. The data model encompasses various aspects of the business including property listings, market analysis, customer interactions, and operational data.
 
+## Project Structure
+- `src/database_setup/`: Database schema definitions and sample data loading scripts
+- `src/openmetadata/`: OpenMetadata configuration and metadata ingestion scripts
+- `src/openmetadata/sample_metadata/`: Business descriptions and user definitions
+
 ## Why OpenMetadata?
 OpenMetadata was chosen for this implementation because it provides:
 - Rich metadata management capabilities
@@ -66,11 +71,6 @@ The system contains the following key schemas:
 4. Access the OpenMetadata UI at: http://localhost:8585
    - Username: admin@open-metadata.org
    - Password: admin
-
-## Project Structure
-- `src/database_setup/`: Database schema definitions and sample data loading scripts
-- `src/openmetadata/`: OpenMetadata configuration and metadata ingestion scripts
-- `src/openmetadata/sample_metadata/`: Business descriptions and user definitions
 
 ## Future Enhancements
 - Implement Domains, Tiers, and Glossary

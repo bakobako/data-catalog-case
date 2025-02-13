@@ -7,6 +7,8 @@ python -m venv .openmetadata_venv
 source .openmetadata_venv/bin/activate
 pip install -r requirements.txt
 
+cd src
+
 echo -e "\n=== Setting Database Connection In OpenMetadata ==="
 ENCODED_PASSWORD=$(echo -n "admin" | base64)
 JWT_TOKEN=$(curl -X POST http://localhost:8585/api/v1/users/login \
