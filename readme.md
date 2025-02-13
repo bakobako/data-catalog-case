@@ -1,9 +1,22 @@
 # Real Estate Data Catalog Case Study
 
 ## Overview
-This project implements a data catalog system for a real estate data warehouse using OpenMetadata. The system allows users to explore both technical and business information about available schemas, tables, and columns.
+This project implements a data catalog system for a real estate data warehouse using OpenMetadata. 
+The system allows users to explore both technical and business information about available schemas, tables, and columns.
+The sample data represents a fictitious real estate company that provides property listings and 
+valuation services for buyers. The data model encompasses various aspects of the business including property 
+listings, market analysis, customer interactions, and operational data.
 
-The sample data represents a fictitious real estate company that provides property listings and valuation services for buyers. The data model encompasses various aspects of the business including property listings, market analysis, customer interactions, and operational data.
+## Task given
+
+Design a data cataloging system for a data warehouse so that a user can explore technical and business 
+information about available schemas, tables and columns.
+
+* Automatically ingest free public datasets (from Kaggle or elsewhere) to a database system of your choice. Include at least 10 schemas, each should have multiple tables.
+* Create a data model representing the descriptions of your data. Include business information (e.g. what is the context of a column) which can be originating from a static extract.
+* Present this metadata information to a user.
+* Optionally, come up with an automated way to gather business information from users to enrich technical metadata without description.
+* Store your source codes in a Git repository.
 
 ## Project Structure
 - `src/database_setup/`: Database schema definitions and sample data loading scripts
