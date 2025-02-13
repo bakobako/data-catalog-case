@@ -1,0 +1,413 @@
+schemas:
+  customer_support:
+    description: "Schema for managing customer service operations, including support tickets, conversations, and message history. This system tracks the full lifecycle of customer inquiries from initial contact through resolution."
+    tables:
+      tickets:
+        description: "Central tracking system for customer support issues, linking customers with support staff and maintaining the status of support requests. Each ticket represents a distinct customer inquiry or problem that needs resolution."
+        columns:
+          ticket_id: "Unique identifier for each support ticket"
+          customer_id: "Reference to the customer who created the ticket"
+          subject: "Brief headline describing the support issue"
+          description: "Detailed explanation of the customer's problem or request"
+          status: "Current state of the ticket (open, closed, pending, resolved)"
+          created_at: "Timestamp when the ticket was initially created"
+          updated_at: "Timestamp of the most recent update to the ticket"
+          assigned_to_employee_id: "ID of the support staff member responsible for handling this ticket"
+      conversations:
+        description: "Records of interaction sessions between customers and support staff, tracking the timeline and context of support communications for each ticket"
+        columns:
+          conversation_id: "Unique identifier for each conversation thread"
+          ticket_id: "Reference to the associated support ticket"
+          employee_id: "ID of the support staff member participating in the conversation"
+          started_at: "Timestamp when the conversation began"
+          ended_at: "Timestamp when the conversation was concluded"
+
+      messages:
+        description: "Detailed record of all communications within support conversations, including both customer and support staff messages"
+        columns:
+          message_id: "Unique identifier for each message"
+          conversation_id: "Reference to the parent conversation"
+          sender_type: "Indicates whether the message is from customer or support staff"
+          message_text: "Actual content of the message"
+          timestamp: "Exact time when the message was sent"
+
+      ticket_history:
+        description: "Audit trail of all status changes and updates to support tickets, enabling tracking of ticket progression and support staff actions"
+        columns:
+          history_id: "Unique identifier for each history entry"
+          ticket_id: "Reference to the associated ticket"
+          status_changed_to: "New status value after the change"
+          changed_by_employee_id: "ID of the employee who made the status change"
+          changed_at: "Timestamp when the status change occurred"
+
+  real_estate_listings:
+    description: "Schema for managing real estate property listings, including raw listing data, analyzed property information, location details, and property photos. This system supports comprehensive property tracking and analysis."
+    tables:
+      raw_real_estate_listings:
+        description: "Initial storage for unprocessed property listings as they are collected from various source portals, preserving the original listing data"
+        columns:
+          listing_id: "Unique identifier for each property listing"
+          source_portal: "Name of the website or platform where the listing was found"
+          listing_url: "Original URL of the property listing"
+          short_description: "Brief summary of the property listing"
+          long_description: "Complete detailed description from the original listing"
+          ingested_at: "Timestamp when the listing was collected"
+
+      locations:
+        description: "Geographical and address information for all properties, enabling location-based searching and analysis"
+        columns:
+          location_id: "Unique identifier for each property location"
+          city: "City where the property is located"
+          district: "Specific district or neighborhood within the city"
+          street: "Street name of the property address"
+          house_number: "Building or house number"
+          latitude: "Geographical latitude coordinate"
+          longitude: "Geographical longitude coordinate"
+
+      analysed_real_estate_listings:
+        description: "Structured and normalized property data extracted from raw listings, including detailed property characteristics and features"
+        columns:
+          listing_id: "Reference to the original raw listing"
+          property_type: "Category of property (apartment, house, etc.)"
+          listing_price: "Advertised price of the property"
+          currency: "Currency of the listing price"
+          location_id: "Reference to the property's location details"
+          num_bedrooms: "Number of bedrooms in the property"
+          num_bathrooms: "Number of bathrooms in the property"
+          area_m2: "Total living area in square meters"
+          apartment_layout: "Description of the floor plan arrangement"
+          floor_number: "Floor level of the property in the building"
+          building_floors: "Total number of floors in the building"
+          energy_efficiency_label: "Energy performance certificate rating"
+          monthly_payments_czk: "Additional monthly costs in Czech Koruna"
+
+      listing_photos:
+        description: "Storage and management of property photographs, including classification and tracking of image assets"
+        columns:
+          photo_id: "Unique identifier for each photo"
+          listing_id: "Reference to the associated property listing"
+          photo_url: "URL where the photo is stored"
+          photo_type: "Classification of the photo (exterior, interior, floor plan, etc.)"
+          upload_timestamp: "When the photo was added to the system"
+
+  sales:
+    description: "Schema for managing customer relationships, sales transactions, and subscription services. Tracks customer lifecycle from acquisition through ongoing service delivery."
+    tables:
+      customers:
+        description: "Central repository of customer information, including contact details and account status"
+        columns:
+          customer_id: "Unique identifier for each customer"
+          first_name: "Customer's first name"
+          last_name: "Customer's last name"
+          email: "Primary email contact address"
+          phone_number: "Contact phone number"
+          signup_date: "When the customer first registered"
+          status: "Current account status (active, canceled, trial)"
+          preferred_contact_method: "Customer's preferred way to be contacted"
+
+      transactions:
+        description: "Record of all financial transactions with customers, including purchases, subscriptions, and refunds"
+        columns:
+          transaction_id: "Unique identifier for each transaction"
+          customer_id: "Reference to the customer who made the transaction"
+          transaction_type: "Category of transaction (purchase, subscription, refund)"
+          amount: "Monetary value of the transaction"
+          currency: "Currency used in the transaction"
+          transaction_date: "When the transaction occurred"
+          payment_method: "Method used for payment"
+
+      subscriptions:
+        description: "Management of customer subscription services, including plan details and subscription lifecycle"
+        columns:
+          subscription_id: "Unique identifier for each subscription"
+          customer_id: "Reference to the subscribing customer"
+          subscription_plan: "Type of subscription plan"
+          start_date: "When the subscription began"
+          end_date: "When the subscription terminates"
+          status: "Current state of the subscription"
+
+  human_resources:
+    description: "Schema for managing employee data, organizational structure, and departmental information. Supports internal workforce management and organizational planning."
+    tables:
+      departments:
+        description: "Organizational structure tracking, including department leadership and resource allocation"
+        columns:
+          department_id: "Unique identifier for each department"
+          department_name: "Official name of the department"
+          manager_id: "Reference to the employee managing the department"
+          budget: "Allocated budget for the department"
+          employee_count: "Number of employees in the department"
+
+      employees:
+        description: "Comprehensive employee information tracking, including roles, compensation, and employment status"
+        columns:
+          employee_id: "Unique identifier for each employee"
+          first_name: "Employee's first name"
+          last_name: "Employee's last name"
+          position: "Job title or role"
+          department_id: "Reference to the employee's department"
+          salary: "Current salary amount"
+          hire_date: "When the employee started"
+          status: "Current employment status"
+
+  cloud_infrastructure:
+    description: "Schema for monitoring cloud operations, including pipeline execution and cost tracking. Enables oversight of cloud resource utilization and operational efficiency."
+    tables:
+      pipeline_runs:
+        description: "Execution tracking for data processing pipelines, monitoring operational status and performance"
+        columns:
+          run_id: "Unique identifier for each pipeline execution"
+          pipeline_name: "Name of the executed pipeline"
+          start_timestamp: "When the pipeline started running"
+          end_timestamp: "When the pipeline completed"
+          status: "Final execution status of the pipeline run"
+
+      cloud_costs:
+        description: "Detailed tracking of cloud resource usage and associated costs across different service categories"
+        columns:
+          cost_id: "Unique identifier for each cost entry"
+          cost_category: "Type of cloud service incurring the cost"
+          amount: "Monetary amount of the cost"
+          currency: "Currency of the cost amount"
+          timestamp: "When the cost was incurred"
+          cost_description: "Detailed explanation of the cost source"
+
+  marketing:
+    description: "Schema for managing marketing activities, including SEO targeting, social media campaigns, and analytics tracking. Supports comprehensive marketing strategy and performance analysis."
+    tables:
+      seo_targeting:
+        description: "Tracks SEO keyword targeting and optimization efforts for specific URLs"
+        columns:
+          seo_id: "Unique identifier for each SEO targeting entry"
+          keyword: "Target keyword being optimized for"
+          search_volume: "Monthly search volume for the target keyword"
+          competition_level: "Level of competition for the keyword (High, Medium, Low)"
+          target_url: "URL being optimized for the keyword"
+          ranking_position: "Current ranking position for the target keyword"
+          created_at: "Timestamp when the SEO targeting was created"
+
+      seo_analytics:
+        description: "Analytics data for SEO performance tracking"
+        columns:
+          analytics_id: "Unique identifier for each analytics entry"
+          seo_id: "Reference to the associated SEO targeting"
+          visits: "Number of visits generated through SEO"
+          bounce_rate: "Bounce rate for organic traffic"
+          conversions: "Number of conversions from SEO traffic"
+          ranking_position: "Updated ranking position"
+          timestamp: "When the analytics data was recorded"
+
+      social_media_campaigns:
+        description: "Management of social media marketing campaigns across different platforms"
+        columns:
+          sm_campaign_id: "Unique identifier for each social media campaign"
+          platform: "Social media platform (Facebook, Instagram, Twitter, LinkedIn)"
+          campaign_name: "Name of the campaign"
+          start_date: "Campaign start date"
+          end_date: "Campaign end date"
+          budget: "Allocated budget for the campaign"
+          target_audience: "JSON data defining target audience criteria"
+          status: "Current campaign status (active, completed, paused)"
+
+      social_media_ads:
+        description: "Individual ad content and performance within social media campaigns"
+        columns:
+          sm_ad_id: "Unique identifier for each social media ad"
+          sm_campaign_id: "Reference to the parent campaign"
+          ad_name: "Name of the advertisement"
+          ad_type: "Type of ad (image, video, carousel)"
+          ad_content: "URL or creative text content"
+          clicks: "Number of clicks received"
+          impressions: "Number of times the ad was shown"
+          ctr: "Click-through rate"
+          cost_per_click: "Average cost per click"
+          status: "Current ad status"
+
+      social_media_engagement:
+        description: "Tracking of social media engagement metrics for ads"
+        columns:
+          engagement_id: "Unique identifier for each engagement record"
+          sm_ad_id: "Reference to the social media ad"
+          likes: "Number of likes received"
+          comments: "Number of comments received"
+          shares: "Number of times the content was shared"
+          click_through: "Number of click-throughs"
+          timestamp: "When the engagement was recorded"
+
+  user_behaviour:
+    description: "Schema for tracking and analyzing user interactions across email and website channels. Enables understanding of user engagement patterns and communication effectiveness."
+    tables:
+      email_tracking:
+        description: "Tracks email-related events and interactions with customers"
+        columns:
+          email_event_id: "Unique identifier for each email event"
+          customer_id: "Reference to the customer"
+          email_id: "Unique identifier for the email"
+          event_type: "Type of email event"
+          timestamp: "When the event occurred"
+          interaction_duration: "Duration of interaction in seconds"
+          bounce_reason: "Reason for email bounce if applicable"
+
+      email_open_tracking:
+        description: "Detailed tracking of email open events"
+        columns:
+          open_event_id: "Unique identifier for each open event"
+          email_event_id: "Reference to the email event"
+          open_timestamp: "When the email was opened"
+          open_duration: "How long the email was opened for"
+
+      website_visits:
+        description: "Tracking of website visitor sessions and basic analytics"
+        columns:
+          visit_id: "Unique identifier for each website visit"
+          customer_id: "Reference to the customer if known"
+          session_id: "Unique session identifier"
+          timestamp: "When the visit occurred"
+          ip_address: "Visitor's IP address"
+          country: "Country based on IP or geolocation"
+          referrer_url: "URL that referred the visitor"
+
+      page_views:
+        description: "Detailed tracking of individual page views within website visits"
+        columns:
+          page_view_id: "Unique identifier for each page view"
+          visit_id: "Reference to the website visit"
+          page_url: "URL of the viewed page"
+          page_title: "Title of the viewed page"
+          view_duration: "How long the page was viewed"
+          timestamp: "When the page view occurred"
+
+  czech_market_data:
+    description: "Schema for tracking Czech real estate market indicators, including demographics, property statistics, and development projects."
+    tables:
+      regional_demographics:
+        description: "Demographic data for Czech regions and districts"
+        columns:
+          region_id: "Unique identifier for each region"
+          region_name: "Name of the region"
+          district_name: "Name of the district within the region"
+          population: "Total population in the area"
+          avg_age: "Average age of the population"
+          unemployment_rate: "Current unemployment rate"
+          avg_salary: "Average salary in the region"
+          timestamp: "When the data was recorded"
+          households_count: "Number of households"
+          population_density: "Population per square kilometer"
+
+      property_market_stats:
+        description: "Statistical data about property market performance"
+        columns:
+          stat_id: "Unique identifier for each statistic entry"
+          region_id: "Reference to the region"
+          property_type: "Type of property (apartment, house, land)"
+          avg_price_per_m2: "Average price per square meter"
+          avg_rental_price_per_m2: "Average rental price per square meter"
+          number_of_transactions: "Number of property transactions"
+          timestamp: "When the statistics were recorded"
+          year_over_year_price_change: "Percentage change in price over previous year"
+
+      new_development_projects:
+        description: "Information about new real estate development projects"
+        columns:
+          project_id: "Unique identifier for each project"
+          region_id: "Reference to the region"
+          project_name: "Name of the development project"
+          developer_name: "Name of the developer"
+          total_units: "Total number of units planned"
+          available_units: "Number of units still available"
+          completion_date: "Expected completion date"
+          price_range_min: "Minimum price in the project"
+          price_range_max: "Maximum price in the project"
+          project_status: "Current status of the project"
+          has_parking: "Whether parking is available"
+          website_url: "Project website URL"
+
+      mortgage_stats:
+        description: "Tracking of mortgage rates and conditions from various banks"
+        columns:
+          stat_id: "Unique identifier for each mortgage statistic"
+          bank_name: "Name of the bank"
+          interest_rate: "Current interest rate offered"
+          min_down_payment_percentage: "Minimum down payment required"
+          max_ltv: "Maximum loan to value ratio"
+          timestamp: "When the data was recorded"
+          fixation_period_years: "Length of rate fixation period"
+
+  location_amenities:
+    description: "Schema for tracking location-based amenities and services, supporting property location analysis and valuation."
+    tables:
+      transport_stops:
+        description: "Public transport stop locations and details"
+        columns:
+          stop_id: "Unique identifier for each transport stop"
+          stop_name: "Name of the stop"
+          transport_type: "Type of transport (metro, tram, bus, train)"
+          latitude: "Geographical latitude"
+          longitude: "Geographical longitude"
+          zone: "Transport zone"
+          wheelchair_accessible: "Whether the stop is wheelchair accessible"
+          lines: "Transport lines serving this stop"
+
+      schools:
+        description: "Educational facilities and their locations"
+        columns:
+          school_id: "Unique identifier for each school"
+          school_name: "Name of the school"
+          school_type: "Type of school"
+          latitude: "Geographical latitude"
+          longitude: "Geographical longitude"
+          address: "Physical address"
+          website: "School website URL"
+          language_of_instruction: "Primary language of instruction"
+          is_private: "Whether it's a private school"
+
+      points_of_interest:
+        description: "Various points of interest affecting property value"
+        columns:
+          poi_id: "Unique identifier for each point of interest"
+          name: "Name of the location"
+          category: "Type of point of interest"
+          subcategory: "Specific subcategory"
+          latitude: "Geographical latitude"
+          longitude: "Geographical longitude"
+          address: "Physical address"
+          opening_hours: "Operating hours"
+          website: "Website URL"
+          phone: "Contact phone number"
+
+  real_estate_trackers:
+    description: "Schema for managing user property preferences and automated matching systems. Enables personalized property recommendations and notifications."
+    tables:
+      trackers:
+        description: "User-defined property search criteria and preferences"
+        columns:
+          tracker_id: "Unique identifier for each tracker"
+          customer_id: "Reference to the customer"
+          tracker_name: "Name of the tracker"
+          property_type: "Type of property being tracked"
+          min_price: "Minimum price threshold"
+          max_price: "Maximum price threshold"
+          min_bedrooms: "Minimum number of bedrooms"
+          max_bedrooms: "Maximum number of bedrooms"
+          min_bathrooms: "Minimum number of bathrooms"
+          max_bathrooms: "Maximum number of bathrooms"
+          min_square_meters: "Minimum property size"
+          max_square_meters: "Maximum property size"
+          preferences: "Additional search preferences in JSON format"
+          created_at: "When the tracker was created"
+          updated_at: "When the tracker was last updated"
+
+      tracker_matches:
+        description: "Matches between property trackers and available listings"
+        columns:
+          match_id: "Unique identifier for each match"
+          tracker_id: "Reference to the tracker"
+          listing_id: "Reference to the matched listing"
+
+      tracker_notifications:
+        description: "Record of notifications sent for tracker matches"
+        columns:
+          notification_id: "Unique identifier for each notification"
+          tracker_match_id: "Reference to the tracker match"
+          notification_method: "Method used to send notification"
+          sent_at: "When the notification was sent"

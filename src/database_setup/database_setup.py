@@ -15,7 +15,7 @@ from models.czech_market_data.models import *
 
 
 def create_schemas(engine):
-    schemas = [obj for obj in os.listdir('database_definition/models') if not obj.endswith('.py')]
+    schemas = [obj for obj in os.listdir('database_setup/models') if not obj.endswith('.py')]
     with engine.connect() as connection:
         for schema in schemas:
             connection.execute(text(f"CREATE SCHEMA IF NOT EXISTS {schema}"))
@@ -42,4 +42,8 @@ def main(database_url):
 
 
 if __name__ == "__main__":
-    main("postgresql://user:pass@localhost:5433/postgres")
+    if len(sys.argv) != 2:
+        raise Exception("Invalid arguments: Usage: python create_tables.py <DATABASE_URL>")
+
+    database_url = sys.argv[1]
+    main(database_url)

@@ -1,0 +1,54 @@
+users:
+  customer_support_admin:
+    name: "jana_novakova"
+    email: "j.novakova@example.com"
+    description: "Administrator for customer support systems"
+    display_name: "Jana Nováková"
+    is_admin: true
+    assigned_schemas:
+      - customer_support
+
+  real_estate_manager:
+    name: "petr_dvorak"
+    email: "p.dvorak@example.com"
+    description: "Manager of real estate listings and data"
+    display_name: "Petr Dvořák"
+    assigned_schemas:
+      - real_estate_listings
+      - real_estate_trackers
+      - czech_market_data
+      - location_amenities
+
+  sales_lead:
+    name: "martin_svoboda"
+    email: "m.svoboda@example.com"
+    description: "Sales team leader"
+    display_name: "Martin Svoboda"
+    assigned_schemas:
+      - sales
+
+  hr_manager:
+    name: "katerina_pokorna"
+    email: "k.pokorna@example.com"
+    description: "Human Resources Manager"
+    display_name: "Kateřina Pokorná"
+    assigned_schemas:
+      - human_resources
+
+  infrastructure_admin:
+    name: "tomas_prochazka"
+    email: "t.prochazka@example.com"
+    description: "Cloud Infrastructure Administrator"
+    display_name: "Tomáš Procházka"
+    is_admin: true
+    assigned_schemas:
+      - cloud_infrastructure
+
+  marketing_manager:
+    name: "lucie_kucerova"
+    email: "l.kucerova@example.com"
+    description: "Marketing Team Manager"
+    display_name: "Lucie Kučerová"
+    assigned_schemas:
+      - marketing
+      - user_behaviour 

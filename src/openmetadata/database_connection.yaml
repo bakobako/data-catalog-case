@@ -14,6 +14,10 @@ source:
     config:
       type: DatabaseMetadata
       includeTables: true
+      schemaFilterPattern:
+        excludes:
+          - public
+          - information_schema
 sink:
   type: metadata-rest
   config: { }
@@ -25,3 +29,6 @@ workflowConfig:
     securityConfig:
       jwtToken: "{jwt_token}"
     storeServiceConnection: true  # false
+
+
+

@@ -1,6 +1,7 @@
 import os
 import pandas as pd
-from database_definition.models.base import get_engine
+import sys
+from models.base import get_engine
 
 
 def get_schema_and_table(filename: str):
@@ -20,7 +21,7 @@ def convert_datetime(value):
         return None
 
 
-def load_sample_data(database_url: str, data_dir: str = 'sample_data'):
+def load_sample_data(database_url: str, data_dir: str = 'database_setup/database_sample_data'):
     """Load all CSV files into the database in specific order."""
     engine = get_engine(database_url)
 
@@ -90,11 +91,8 @@ def load_sample_data(database_url: str, data_dir: str = 'sample_data'):
 
 
 def main():
-    import sys
     if len(sys.argv) != 2:
-        print("Usage: python load_sample_data.py <DATABASE_URL>")
-        print("Example: python load_sample_data.py postgresql://user:pass@localhost:5432/dbname")
-        sys.exit(1)
+        raise Exception("Invalid arguments: Usage: python load_sample_data.py <DATABASE_URL>")
 
     database_url = sys.argv[1]
     load_sample_data(database_url)

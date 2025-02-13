@@ -2,3 +2,5 @@
 /openmetadata-docker/docker-volume/
 /openmetadata-docker/logs/
 .idea/
+/.openmetadata_venv/
+/src/openmetadata/docker-volume/

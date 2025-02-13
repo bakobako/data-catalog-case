@@ -40,31 +40,47 @@ class MetadataUpdater:
             'Content-Type': 'application/json-patch+json'
         }
 
-    def update_schema_description(self, schema_id: str, description: str) -> None:
-        """Update schema description"""
+    def update_schema_description(self, schema_id: str, description: str, display_name: Optional[str] = None) -> None:
+        """Update schema description and optionally display name"""
         url = f"{self.base_url}/api/v1/databaseSchemas/{schema_id}"
-        payload = json.dumps([
+        payload = [
             {
                 "op": "add",
                 "path": "/description",
                 "value": description
             }
-        ])
-        response = requests.patch(url, headers=self._get_headers(), data=payload)
+        ]
+
+        if display_name:
+            payload.append({
+                "op": "add",
+                "path": "/displayName",
+                "value": display_name
+            })
+
+        response = requests.patch(url, headers=self._get_headers(), data=json.dumps(payload))
         if response.status_code != 200:
             raise Exception(f"Failed to update schema description: {response.text}")
 
-    def update_table_description(self, table_id: str, description: str) -> None:
-        """Update table description"""
+    def update_table_description(self, table_id: str, description: str, display_name: Optional[str] = None) -> None:
+        """Update table description and optionally display name"""
         url = f"{self.base_url}/api/v1/tables/{table_id}"
-        payload = json.dumps([
+        payload = [
             {
                 "op": "add",
                 "path": "/description",
                 "value": description
             }
-        ])
-        response = requests.patch(url, headers=self._get_headers(), data=payload)
+        ]
+
+        if display_name:
+            payload.append({
+                "op": "add",
+                "path": "/displayName",
+                "value": display_name
+            })
+
+        response = requests.patch(url, headers=self._get_headers(), data=json.dumps(payload))
         if response.status_code != 200:
             raise Exception(f"Failed to update table description: {response.text}")
 
@@ -130,6 +146,12 @@ class MetadataUpdater:
             if response.status_code != 200:
                 raise Exception(f"Failed to update column descriptions: {response.text}")
 
+    def _generate_display_name(self, name: str) -> str:
+        """Generate a human readable display name from a technical name"""
+        # Convert snake_case or kebab-case to title case
+        words = name.replace('_', ' ').replace('-', ' ').split()
+        return ' '.join(word.capitalize() for word in words)
+
     def update_metadata_from_yaml(self, yaml_file_path: str) -> None:
         """Update metadata using a YAML configuration file"""
         print(f"Updating metadata from {yaml_file_path}")
@@ -139,18 +161,28 @@ class MetadataUpdater:
         schemas = self.get_schemas()
         tables = self.get_tables()
 
-        # Update schema descriptions
+        # Update schema descriptions and display names
         for schema_name, schema_data in metadata.get('schemas', {}).items():
             if schema_name in schemas:
                 print(f"Updating schema description for {schema_name}")
-                self.update_schema_description(schemas[schema_name], schema_data['description'])
+                display_name = schema_data.get('display_name', self._generate_display_name(schema_name))
+                self.update_schema_description(
+                    schemas[schema_name],
+                    schema_data['description'],
+                    display_name
+                )
 
         # Update table and column descriptions
         for schema_name, schema_data in metadata.get('schemas', {}).items():
             for table_name, table_data in schema_data.get('tables', {}).items():
                 if table_name in tables:
-                    # Update table description
-                    self.update_table_description(tables[table_name], table_data['description'])
+                    # Update table description and display name
+                    display_name = table_data.get('display_name', self._generate_display_name(table_name))
+                    self.update_table_description(
+                        tables[table_name],
+                        table_data['description'],
+                        display_name
+                    )
 
                     # Update column descriptions
                     if 'columns' in table_data:
@@ -162,11 +194,10 @@ class MetadataUpdater:
                         )
 
 
-updater = MetadataUpdater(
-    base_url="http://localhost:8585",
-    email="admin@open-metadata.org",
-    password="admin"
-)
-
-# Update metadata from YAML file
-updater.update_metadata_from_yaml("metadata.yaml")
+if __name__ == "__main__":
+    updater = MetadataUpdater(
+        base_url="http://localhost:8585",
+        email="admin@open-metadata.org",
+        password="admin"
+    )
+    updater.update_metadata_from_yaml("openmetadata/sample_metadata/schema_metadata.yaml")
