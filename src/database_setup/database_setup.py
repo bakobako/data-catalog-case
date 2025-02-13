@@ -22,7 +22,6 @@ def create_schemas(engine):
             print(f"Schema '{schema}' created (if it didn't already exist).")
 
 
-# Function to create all tables
 def create_tables(engine):
     Base.metadata.create_all(bind=engine)
     print("All tables have been created successfully!")
@@ -34,7 +33,6 @@ def execute_sql_from_file(connection, file_path):
         connection.execute(text(sql))
 
 
-# Main function
 def main(database_url):
     engine = get_engine(database_url)
     create_schemas(engine)
