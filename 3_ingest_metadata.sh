@@ -9,9 +9,8 @@ pip install -r requirements.txt
 
 cd src
 
-echo -e "\n=== Running Metadata Ingestion ==="
+echo -e "\n=== Running Metadata Ingestion - Schema, Table, and Column descriptions ==="
 python openmetadata/set_schema_metadata.py
-python openmetadata/set_user_metadata.py
 
-echo -e "\n=== Restoring Original Configuration ==="
-mv openmetadata/database_connection.yaml.original openmetadata/database_connection.yaml
+echo -e "\n=== Running Metadata Ingestion - User Metadata ==="
+python openmetadata/set_user_metadata.py
