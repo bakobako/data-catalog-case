@@ -73,16 +73,8 @@ The system contains the following key schemas:
 - `src/openmetadata/sample_metadata/`: Business descriptions and user definitions
 
 ## Future Enhancements
-- Add data quality metrics
-- Implement automated business metadata collection
-- Add data lineage tracking
-- Integrate with data governance tools
-
-
-NICE TO HAVE:
-- look at domains
-- add tiers
-- look up glossary
-
+- Implement Domains, Tiers, and Glossary
+- Add data profiling
+- Create data quality tests
 
 
