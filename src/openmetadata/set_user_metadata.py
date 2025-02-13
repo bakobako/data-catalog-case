@@ -45,7 +45,7 @@ class UserManager:
         """Create a new user"""
         url = f"{self.base_url}/api/v1/users"
 
-        # Generate a secure password (in practice, you might want to make this more sophisticated)
+        # Generate a dummy password
         password = f"Password123!{name}"
 
         payload = {
@@ -155,7 +155,6 @@ class UserManager:
                 raise Exception(f"Error processing user {user_key}: {str(e)}")
 
 
-# Update the usage example
 if __name__ == "__main__":
     manager = UserManager(
         base_url="http://localhost:8585",
@@ -163,5 +162,4 @@ if __name__ == "__main__":
         admin_password="admin"
     )
 
-    # Setup schema owners based on the users configuration
     manager.setup_schema_owners_from_config("openmetadata/sample_metadata/user_metadata.yaml")
